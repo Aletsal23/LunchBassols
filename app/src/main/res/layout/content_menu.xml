@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/regist"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Menu"
+    tools:showIn="@layout/app_bar_menu">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="93dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="MENU"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="337dp"
+        android:layout_height="456dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="102dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chilaquiles"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="156dp" />
+
+                <Space
+                    android:layout_width="43dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="152dp"
+                    android:layout_height="102dp"
+                    app:srcCompat="@drawable/chilaquiles"
+                    tools:layout_editor_absoluteX="173dp"
+                    tools:layout_editor_absoluteY="116dp" />
+
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+
+                <CheckBox
+                    android:id="@+id/checkBox5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hamburguesa"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="378dp" />
+
+                <Space
+                    android:layout_width="24dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="189dp"
+                    android:layout_height="102dp"
+                    app:srcCompat="@drawable/hamburguesa"
+                    tools:layout_editor_absoluteX="155dp"
+                    tools:layout_editor_absoluteY="348dp" />
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+
+                <CheckBox
+                    android:id="@+id/checkBox4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Huevos"
+                    android:textColor="@android:color/white"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="267dp" />
+
+                <Space
+                    android:layout_width="47dp"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="173dp"
+                    android:layout_height="102dp"
+                    app:srcCompat="@drawable/fredie"
+                    tools:layout_editor_absoluteX="164dp"
+                    tools:layout_editor_absoluteY="235dp" />
+
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
