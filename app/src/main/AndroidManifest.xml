@@ -29,6 +29,7 @@
             android:name=".Menu"
             android:label="@string/title_activity_menu"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".InicioSesion"></activity>
     </application>
 
 </manifest>
