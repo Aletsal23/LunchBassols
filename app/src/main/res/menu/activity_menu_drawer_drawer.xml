@@ -2,21 +2,22 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
+
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_camera"
+            android:id="@+id/nav_comida"
             android:icon="@drawable/com"
             android:title="Comida" />
         <item
-            android:id="@+id/nav_gallery"
+            android:id="@+id/nav_bebidas"
             android:icon="@drawable/bebida"
             android:title="Bebidas" />
         <item
-            android:id="@+id/nav_slideshow"
+            android:id="@+id/nav_snacks"
             android:icon="@drawable/snacks"
             android:title="Snacks" />
         <item
-            android:id="@+id/nav_manage"
+            android:id="@+id/nav_menudia"
             android:icon="@drawable/menu"
             android:title="Menu del día" />
 
@@ -25,11 +26,11 @@
     <item android:title="Usuario">
         <menu>
             <item
-                android:id="@+id/nav_share"
+                android:id="@+id/nav_ticket"
                 android:icon="@drawable/ticket"
                 android:title="Ticket" />
             <item
-                android:id="@+id/nav_send"
+                android:id="@+id/nav_salir"
                 android:icon="@drawable/salir"
                 android:title="Cerrar Sesión" />
         </menu>
