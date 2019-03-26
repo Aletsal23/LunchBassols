@@ -36,20 +36,22 @@
         tools:layout_editor_absoluteY="16dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnInicio"
         android:layout_width="172dp"
         android:layout_height="68dp"
         android:background="@color/colorAccent"
+        android:onClick="InicioSesion"
         android:text="Iniciar Sesión"
         android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="94dp"
         tools:layout_editor_absoluteY="316dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnRegistro"
         android:layout_width="171dp"
         android:layout_height="62dp"
         android:background="@color/colorAccent"
+        android:onClick="Registro"
         android:text="REGISTRARSE"
         android:textColor="@android:color/background_light"
         tools:layout_editor_absoluteX="95dp"

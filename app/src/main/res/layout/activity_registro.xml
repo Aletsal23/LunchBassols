@@ -32,7 +32,7 @@
         tools:layout_editor_absoluteY="366dp" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imgbEmpleado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/chef"
