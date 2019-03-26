@@ -16,7 +16,7 @@
         tools:layout_editor_absoluteY="44dp">
 
         <EditText
-            android:id="@+id/editText9"
+            android:id="@+id/txtnTelefono"
             android:layout_width="195dp"
             android:layout_height="32dp"
             android:background="@android:color/black"
@@ -41,7 +41,7 @@
             android:textStyle="bold"
             app:fontFamily="casual"
             app:layout_constraintBottom_toTopOf="@+id/textView14"
-            app:layout_constraintEnd_toStartOf="@+id/editText8"
+            app:layout_constraintEnd_toStartOf="@+id/txtnEdad"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -58,12 +58,12 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:fontFamily="casual"
-            app:layout_constraintEnd_toStartOf="@+id/editText9"
+            app:layout_constraintEnd_toStartOf="@+id/txtnTelefono"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="391dp" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/txteDireccion"
             android:layout_width="265dp"
             android:layout_height="26dp"
             android:layout_marginEnd="8dp"
@@ -88,13 +88,13 @@
             android:textSize="15sp"
             android:textStyle="bold"
             app:fontFamily="casual"
-            app:layout_constraintEnd_toStartOf="@+id/editText5"
+            app:layout_constraintEnd_toStartOf="@+id/txteDireccion"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
             tools:layout_editor_absoluteY="294dp" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/txteCorreo"
             android:layout_width="265dp"
             android:layout_height="26dp"
             android:layout_marginEnd="8dp"
@@ -134,7 +134,7 @@
             app:layout_constraintGuide_begin="83dp" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/txteNombre"
             android:layout_width="265dp"
             android:layout_height="26dp"
             android:layout_marginTop="8dp"
@@ -145,12 +145,12 @@
             android:ems="10"
             android:inputType="textPersonName"
             android:textColor="@android:color/background_light"
-            app:layout_constraintBottom_toTopOf="@+id/editText3"
+            app:layout_constraintBottom_toTopOf="@+id/txteCorreo"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/rdbCocina"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Cocinero"
@@ -159,7 +159,7 @@
             tools:layout_editor_absoluteY="238dp" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/rdbCaja"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
@@ -170,18 +170,18 @@
             android:textColor="@android:color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.493"
-            app:layout_constraintStart_toEndOf="@+id/radioButton"
+            app:layout_constraintStart_toEndOf="@+id/rdbCocina"
             tools:layout_editor_absoluteY="238dp" />
 
         <EditText
-            android:id="@+id/editText8"
+            android:id="@+id/txtnEdad"
             android:layout_width="88dp"
-            android:layout_height="32dp"
+            android:layout_height="28dp"
             android:background="@android:color/black"
             android:ems="10"
             android:inputType="number"
             tools:layout_editor_absoluteX="96dp"
-            tools:layout_editor_absoluteY="333dp" />
+            tools:layout_editor_absoluteY="337dp" />
 
         <Button
             android:id="@+id/button3"
@@ -209,7 +209,7 @@
     </android.support.constraint.ConstraintLayout>
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/pswContra"
         android:layout_width="233dp"
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
@@ -240,13 +240,13 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintEnd_toStartOf="@+id/txteCorreo"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView9" />
 
     <EditText
-        android:id="@+id/editText9"
+        android:id="@+id/txtnTelefono"
         android:layout_width="195dp"
         android:layout_height="32dp"
         android:background="@android:color/black"
@@ -271,7 +271,7 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/editText8"
+        app:layout_constraintEnd_toStartOf="@+id/txtnEdad"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
 
@@ -288,12 +288,12 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/editText9"
+        app:layout_constraintEnd_toStartOf="@+id/txtnTelefono"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="391dp" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/txteDireccion"
         android:layout_width="265dp"
         android:layout_height="26dp"
         android:layout_marginEnd="8dp"
@@ -318,7 +318,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/editText5"
+        app:layout_constraintEnd_toStartOf="@+id/txteDireccion"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="294dp" />
@@ -336,7 +336,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/editText3"
+        app:layout_constraintEnd_toStartOf="@+id/txteCorreo"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="154dp" />
 
@@ -355,12 +355,12 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton"
+        app:layout_constraintEnd_toStartOf="@+id/rdbCocina"
         app:layout_constraintHorizontal_bias="0.525"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/txteCorreo"
         android:layout_width="265dp"
         android:layout_height="26dp"
         android:layout_marginEnd="8dp"
@@ -388,7 +388,7 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/textView9"
-        app:layout_constraintEnd_toStartOf="@+id/editText2"
+        app:layout_constraintEnd_toStartOf="@+id/txteNombre"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -420,7 +420,7 @@
         app:layout_constraintGuide_begin="83dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/txteNombre"
         android:layout_width="265dp"
         android:layout_height="26dp"
         android:layout_marginTop="8dp"
@@ -431,12 +431,12 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintBottom_toTopOf="@+id/txteCorreo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <RadioButton
-        android:id="@+id/radioButton"
+        android:id="@+id/rdbCocina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Cocinero"
@@ -456,11 +456,11 @@
         android:textColor="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toEndOf="@+id/radioButton"
+        app:layout_constraintStart_toEndOf="@+id/rdbCocina"
         tools:layout_editor_absoluteY="238dp" />
 
     <EditText
-        android:id="@+id/editText8"
+        android:id="@+id/txtnEdad"
         android:layout_width="88dp"
         android:layout_height="32dp"
         android:background="@android:color/black"
@@ -470,7 +470,7 @@
         tools:layout_editor_absoluteY="333dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnRegistrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
