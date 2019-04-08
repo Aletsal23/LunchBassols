@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regist"
+    android:background="@drawable/caf"
     tools:context=".RegistroUsuario">
 
     <EditText
@@ -27,17 +27,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Contraseña:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/pswPass"
-        app:layout_constraintHorizontal_bias="0.216"
+        app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="275dp" />
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
     <TextView
         android:id="@+id/textView34"
@@ -45,17 +47,15 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Boleta:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/textView28"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView33"
-        app:layout_constraintVertical_bias="0.343" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
     <EditText
         android:id="@+id/txtNom"
@@ -80,6 +80,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Nombre:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
@@ -100,6 +101,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="REGISTRO USUARIO"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -117,18 +119,19 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="12dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Correo:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/textView35"
         app:layout_constraintEnd_toStartOf="@+id/txteEmail"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <EditText
         android:id="@+id/txteEmail"
@@ -167,6 +170,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Direccion:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
@@ -186,6 +190,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Núm. telefonico:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
@@ -221,8 +226,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="REGISTRAR"
+        android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

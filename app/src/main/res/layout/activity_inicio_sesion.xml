@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regist"
+    android:background="@drawable/caf"
     tools:context=".InicioSesion">
 
     <TextView
@@ -72,6 +72,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="INICIO DE SESIÓN"
         android:textColor="@android:color/white"
         android:textSize="30sp"
@@ -118,8 +119,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorPrimaryDark"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="ENTRAR"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regist"
+    android:background="@drawable/caf"
     tools:context=".Registro">
 
     <TextView
@@ -16,6 +16,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="32dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Empleado"
         android:textColor="@android:color/white"
         android:textSize="25sp"
@@ -34,6 +35,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="Cliente"
         android:textColor="@android:color/white"
         android:textSize="25sp"
@@ -89,6 +91,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="20dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="REGISTRO"
         android:textColor="@android:color/white"
         android:textSize="30sp"

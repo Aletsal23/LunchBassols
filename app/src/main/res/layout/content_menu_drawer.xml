@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/regist"
+    android:background="@drawable/fc"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".MenuDrawer"
     tools:showIn="@layout/app_bar_menu_drawer">
@@ -19,22 +19,52 @@
     <TextView
         android:id="@+id/textView7"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="86dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="MENU"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:text='CECyT 8 "Narciso Bassols"'
         android:textColor="@android:color/white"
-        android:textSize="30sp"
+        android:textSize="26sp"
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="137dp"
+        android:layout_height="354dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:ems="10"
+        android:gravity="center_vertical|center_horizontal"
+        android:inputType="textMultiLine"
+        android:text='Cafeteria Cecyt 8 "Narciso Bassols", se dedica a la produccion, venta y distribucion de diferentes tipos de alimentos, los cuales en su mayoria son de buena calidad, aparte de ofrecer un gran servicio.'
+        android:textColor="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="107dp" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="154dp"
+        android:layout_height="86dp"
+        app:srcCompat="@drawable/cafe"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="126dp" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="154dp"
+        android:layout_height="204dp"
+        app:srcCompat="@drawable/cafe1"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="242dp" />
 
 </android.support.constraint.ConstraintLayout>

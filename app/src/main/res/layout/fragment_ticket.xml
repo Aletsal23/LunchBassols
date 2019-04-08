@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/caf"
+    tools:context=".Ticket">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="515dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:text="SALIR"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="TICKET"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:fontFamily="casual" />
+
+    <ScrollView
+        android:layout_width="337dp"
+        android:layout_height="429dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        tools:layout_editor_absoluteX="29dp"
+        tools:layout_editor_absoluteY="102dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="47dp">
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="Cliente:"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+
+                <TextView
+                    android:id="@+id/textView44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="Alimentos:"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent" />
+
+                <EditText
+                    android:id="@+id/textView45"
+                    android:layout_width="239dp"
+                    android:layout_height="126dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="66dp">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="Cuenta:"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="IVA:"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+            </TableRow>
+
+            <Space
+                android:layout_width="24dp"
+                android:layout_height="10dp" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text="Total:"
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+                <Space
+                    android:layout_width="22dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="239dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    app:fontFamily="casual"
+                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+                    app:layout_constraintHorizontal_bias="0.117"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
+
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+</FrameLayout>
