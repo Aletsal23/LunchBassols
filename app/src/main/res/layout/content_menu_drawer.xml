@@ -42,29 +42,42 @@
         android:id="@+id/editText"
         android:layout_width="137dp"
         android:layout_height="354dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:ems="10"
         android:gravity="center_vertical|center_horizontal"
         android:inputType="textMultiLine"
         android:text='Cafeteria Cecyt 8 "Narciso Bassols", se dedica a la produccion, venta y distribucion de diferentes tipos de alimentos, los cuales en su mayoria son de buena calidad, aparte de ofrecer un gran servicio.'
         android:textColor="@android:color/white"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="107dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="122dp" />
 
     <ImageView
         android:id="@+id/imageView9"
         android:layout_width="154dp"
         android:layout_height="86dp"
-        app:srcCompat="@drawable/cafe"
-        tools:layout_editor_absoluteX="190dp"
-        tools:layout_editor_absoluteY="126dp" />
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.315"
+        app:srcCompat="@drawable/cafe" />
 
     <ImageView
         android:id="@+id/imageView10"
         android:layout_width="154dp"
         android:layout_height="204dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
         app:srcCompat="@drawable/cafe1"
-        tools:layout_editor_absoluteX="190dp"
         tools:layout_editor_absoluteY="242dp" />
 
 </android.support.constraint.ConstraintLayout>

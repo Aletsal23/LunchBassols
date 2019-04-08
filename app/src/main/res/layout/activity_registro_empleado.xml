@@ -18,10 +18,10 @@
         android:layout_marginRight="8dp"
         android:background="@android:color/background_dark"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.219"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/txteCorreo" />
 
@@ -102,17 +102,17 @@
 
     <EditText
         android:id="@+id/txteDireccion"
-        android:layout_width="265dp"
+        android:layout_width="252dp"
         android:layout_height="26dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
         android:background="@android:color/background_dark"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rdbCocina" />
+        app:layout_constraintTop_toBottomOf="@+id/pswContra" />
 
     <TextView
         android:id="@+id/textView12"
@@ -246,50 +246,62 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
-    <RadioButton
-        android:id="@+id/rdbCocina"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginLeft="48dp"
-        android:layout_marginTop="16dp"
+    <RadioGroup
+        android:id="@+id/rdbgPuestos"
+        android:layout_width="232dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:background="@android:drawable/screen_background_dark_transparent"
-        android:text="Cocinero"
-        android:textColor="@android:color/white"
-        app:layout_constraintEnd_toStartOf="@+id/radioButton2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/pswContra" />
-
-    <RadioButton
-        android:id="@+id/radioButton2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="44dp"
-        android:layout_marginRight="44dp"
-        android:layout_marginBottom="16dp"
-        android:background="@android:drawable/screen_background_dark_transparent"
-        android:text="Cajero"
-        android:textColor="@android:color/white"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/txteDireccion"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pswContra"
+        app:layout_constraintVertical_bias="0.388">
+
+        <RadioButton
+            android:id="@+id/rdbCajero"
+            android:layout_width="87dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:layout_weight="0"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:text="Cajero"
+            android:textColor="@android:color/background_light" />
+
+        <RadioButton
+            android:id="@+id/rdbCocinero"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="-33.5dp"
+            android:background="@android:drawable/screen_background_dark_transparent"
+            android:text="Cocinero"
+            android:textColor="@android:color/white"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            tools:layout_editor_absoluteY="242dp" />
+
+    </RadioGroup>
 
     <EditText
         android:id="@+id/txtnEdad"
-        android:layout_width="88dp"
+        android:layout_width="214dp"
         android:layout_height="32dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="176dp"
-        android:layout_marginRight="176dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:background="@android:color/black"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.784"
         app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/txteDireccion" />
 
@@ -304,7 +316,9 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
+        android:onClick="entrar"
         android:text="REGISTRAR"
+        android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -316,4 +330,5 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         app:layout_constraintGuide_begin="461dp" />
+
 </android.support.constraint.ConstraintLayout>
