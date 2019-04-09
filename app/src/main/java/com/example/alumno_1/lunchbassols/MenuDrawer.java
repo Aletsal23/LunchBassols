@@ -1,5 +1,6 @@
 package com.example.alumno_1.lunchbassols;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -81,21 +82,30 @@ public class MenuDrawer extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_comida) {
-            // Handle the camera action
+            Intent comida= new Intent(this,Comida.class);
+            startActivity(comida);
         } else if (id == R.id.nav_bebidas) {
-
+            Intent bebidas= new Intent(this,Bebidas.class);
+            startActivity(bebidas);
         } else if (id == R.id.nav_snacks) {
-
+            Intent snacks= new Intent(this,snacks.class);
+            startActivity(snacks);
         } else if (id == R.id.nav_menudia) {
-
+            Intent menudia= new Intent(this,MenuDia.class);
+            startActivity(menudia);
         } else if (id == R.id.nav_ticket) {
-
+            Intent ticket= new Intent(this,Ticket.class);
+            startActivity(ticket);
         } else if (id == R.id.nav_salir) {
-
+            salir();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void salir()
+    {
+        moveTaskToBack(true);
     }
 }
