@@ -4,9 +4,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logobass"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/logobass"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".Inicio">
@@ -23,37 +23,32 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".Inicio" />
         </activity>
-
         <activity
             android:name=".RegistroEmpleado"
             android:parentActivityName=".Registro">
-        <meta-data
+            <meta-data
                 android:name="andorid.support.PARENT_ACTIVITY"
                 android:value=".Registro" />
         </activity>
-
-        <activity android:name=".RegistroUsuario"
-        android:parentActivityName=".Registro">
-        <meta-data
-            android:name="andorid.support.PARENT_ACTIVITY"
-            android:value=".Registro" />
+        <activity
+            android:name=".RegistroUsuario"
+            android:parentActivityName=".Registro">
+            <meta-data
+                android:name="andorid.support.PARENT_ACTIVITY"
+                android:value=".Registro" />
         </activity>
-
-
-
-        <activity android:name=".InicioSesion"
+        <activity
+            android:name=".InicioSesion"
             android:parentActivityName=".Inicio">
-        <meta-data
-            android:name="andorid.support.PARENT_ACTIVITY"
-            android:value=".Inicio" />
+            <meta-data
+                android:name="andorid.support.PARENT_ACTIVITY"
+                android:value=".Inicio" />
         </activity>
-
-
-
         <activity
             android:name=".MenuDrawer"
             android:label="Menu Drawer"
-            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".Compra"></activity>
     </application>
 
 </manifest>

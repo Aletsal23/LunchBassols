@@ -1,5 +1,8 @@
 package com.example.alumno_1.lunchbassols;
 
+
+import android.support.v4.app.FragmentManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -80,16 +83,20 @@ public class MenuDrawer extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
+        FragmentManager fragmentManager=getSupportFragmentManager();
+
         if (id == R.id.nav_comida) {
-            // Handle the camera action
+            fragmentManager.beginTransaction().replace(R.id.container,new Comida()).commit();
         } else if (id == R.id.nav_bebidas) {
-
+            fragmentManager.beginTransaction().replace(R.id.container,new Bebidas()).commit();
         } else if (id == R.id.nav_snacks) {
-
+            fragmentManager.beginTransaction().replace(R.id.container,new snacks()).commit();
         } else if (id == R.id.nav_menudia) {
+            fragmentManager.beginTransaction().replace(R.id.container,new MenuDia()).commit();
+        } else if (id == R.id.nav_pedido) {
 
         } else if (id == R.id.nav_ticket) {
-
+            fragmentManager.beginTransaction().replace(R.id.container,new Ticket()).commit();
         } else if (id == R.id.nav_salir) {
 
         }

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "192728149177",
+    "firebase_url": "https://lunchbassols.firebaseio.com",
+    "project_id": "lunchbassols",
+    "storage_bucket": "lunchbassols.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:192728149177:android:3fc52953b5383224",
+        "android_client_info": {
+          "package_name": "com.example.alumno_1.lunchbassols"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "192728149177-jieg4mrg402jq8hu6jmthvuld3ip66uu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoFSo2X46vDNLAVU5mhzz5s1kj92t3Czg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "192728149177-jieg4mrg402jq8hu6jmthvuld3ip66uu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
