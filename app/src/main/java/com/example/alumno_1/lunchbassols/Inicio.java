@@ -10,7 +10,6 @@ import android.widget.Toast;
 public class Inicio extends AppCompatActivity {
 
     Button btnInicio, btnRegistro;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,18 +24,16 @@ public class Inicio extends AppCompatActivity {
 
     public void InicioSesion(View view)
     {
+
         Intent inicio=new Intent(this, InicioSesion.class);
         startActivity(inicio);
+
+
     }
     public void Registro(View view)
     {
-        Intent registro=new Intent(this, Inicio.class);
+        Intent registro=new Intent(this, Registro.class);
         startActivity(registro);
-        mensaje();
-    }
-    public void mensaje()
-    {
-        Toast toast = Toast.makeText(this, "Se ha registrado correctamente",Toast.LENGTH_LONG);
-        toast.show();
+
     }
 }
