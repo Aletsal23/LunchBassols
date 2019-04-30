@@ -120,6 +120,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
+        android:onClick="MenuDrawer"
         android:text="ENTRAR"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toBottomOf="parent"

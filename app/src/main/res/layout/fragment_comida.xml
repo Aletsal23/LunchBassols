@@ -29,7 +29,7 @@
 
     <ScrollView
         android:layout_width="337dp"
-        android:layout_height="456dp"
+        android:layout_height="402dp"
         android:layout_marginStart="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="80dp"
@@ -166,4 +166,16 @@
         </TableLayout>
     </ScrollView>
 
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="120dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="500dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:onClick="Comprar"
+        android:text="Comprar" />
 </FrameLayout>

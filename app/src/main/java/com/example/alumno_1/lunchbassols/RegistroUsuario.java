@@ -18,9 +18,9 @@ public class RegistroUsuario extends AppCompatActivity {
         btnReg = (Button) findViewById(R.id.btnReg);
 
     }
-    public void MenuDrawer(View view)
+    public void InicioSesion(View view)
     {
-        Intent menudraw=new Intent(this, MenuDrawer.class);
-        startActivity(menudraw);
+        Intent iniciosesion=new Intent(this, InicioSesion.class);
+        startActivity(iniciosesion);
     }
 }

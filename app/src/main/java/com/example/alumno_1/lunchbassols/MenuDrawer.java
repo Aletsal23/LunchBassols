@@ -94,15 +94,26 @@ public class MenuDrawer extends AppCompatActivity
         } else if (id == R.id.nav_menudia) {
             fragmentManager.beginTransaction().replace(R.id.container,new MenuDia()).commit();
         } else if (id == R.id.nav_pedido) {
-
+            Intent h= new Intent(MenuDrawer.this,Compra.class);
+            startActivity(h);
         } else if (id == R.id.nav_ticket) {
             fragmentManager.beginTransaction().replace(R.id.container,new Ticket()).commit();
         } else if (id == R.id.nav_salir) {
+            salir();
 
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    public void pedido()
+    {
+        Intent pedido=new Intent(this, Compra.class);
+        startActivity(pedido);
+    }
+    public void salir()
+    {
+        moveTaskToBack(true);
     }
 }

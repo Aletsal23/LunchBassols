@@ -18,9 +18,9 @@ public class RegistroEmpleado extends AppCompatActivity {
         btnRegistrar = (Button) findViewById(R.id.btnRegistrar);
 
     }
-    public void MenuDrawer(View view)
+    public void InisioSesion(View view)
     {
-        Intent menudraw=new Intent(this, MenuDrawer.class);
-        startActivity(menudraw);
+        Intent iniciosesion=new Intent(this, InicioSesion.class);
+        startActivity(iniciosesion);
     }
 }

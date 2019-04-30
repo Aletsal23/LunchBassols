@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Inicio extends AppCompatActivity {
 
@@ -29,7 +30,13 @@ public class Inicio extends AppCompatActivity {
     }
     public void Registro(View view)
     {
-        Intent registro=new Intent(this, Registro.class);
+        Intent registro=new Intent(this, Inicio.class);
         startActivity(registro);
+        mensaje();
+    }
+    public void mensaje()
+    {
+        Toast toast = Toast.makeText(this, "Se ha registrado correctamente",Toast.LENGTH_LONG);
+        toast.show();
     }
 }

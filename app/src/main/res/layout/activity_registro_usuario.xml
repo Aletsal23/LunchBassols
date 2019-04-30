@@ -227,7 +227,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:onClick="MenuDrawer"
+        android:onClick="InicioSesion"
         android:text="REGISTRAR"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
