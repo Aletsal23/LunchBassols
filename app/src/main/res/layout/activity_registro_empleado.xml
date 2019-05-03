@@ -13,7 +13,7 @@
         android:layout_height="27dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:color/background_dark"
@@ -21,7 +21,6 @@
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/txteCorreoInicio" />
 
@@ -31,7 +30,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
@@ -56,6 +55,8 @@
         android:background="@android:color/black"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintBottom_toTopOf="@+id/guideline3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtnEdad"
@@ -104,14 +105,15 @@
         android:id="@+id/txteDireccion"
         android:layout_width="265dp"
         android:layout_height="26dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
         android:background="@android:color/background_dark"
         android:ems="10"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="294dp" />
+        app:layout_constraintTop_toBottomOf="@+id/rdbgPuestos" />
 
     <TextView
         android:id="@+id/textView12"
@@ -149,7 +151,7 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/txteCorreoInicio"
-        app:layout_constraintHorizontal_bias="0.672"
+        app:layout_constraintHorizontal_bias="0.301"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
@@ -172,10 +174,10 @@
     <EditText
         android:id="@+id/txteCorreoInicio"
         android:layout_width="261dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:background="@android:color/background_dark"
         android:ems="10"
         android:inputType="textPersonName"
@@ -189,7 +191,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
@@ -199,7 +201,7 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/txteNombre"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.235"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
@@ -258,6 +260,8 @@
         android:background="@android:color/black"
         android:ems="10"
         android:inputType="number"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView13"
@@ -274,7 +278,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:onClick="InisioSesion"
+        android:onClick="Registro"
         android:text="REGISTRAR"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -290,18 +294,16 @@
         app:layout_constraintGuide_begin="461dp" />
 
     <RadioGroup
+        android:id="@+id/rdbgPuestos"
         android:layout_width="207dp"
         android:layout_height="35dp"
-        android:layout_marginStart="0dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/txteDireccion"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
         app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toBottomOf="@+id/pswContraInicio" >
+        app:layout_constraintTop_toBottomOf="@+id/pswContraInicio">
 
         <RadioButton
             android:id="@+id/rdbCajero"
