@@ -16,8 +16,7 @@ public class RegistroEmpleado extends AppCompatActivity {
     RadioGroup rdbgPuestos;
     RadioButton rdbCajero, rdbCocinero;
     Button btnRegistrar;
-    String nom,correo,contra,puesto,direccion,edad,telefono;
-
+    String puesto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,11 +24,14 @@ public class RegistroEmpleado extends AppCompatActivity {
 
         btnRegistrar = (Button) findViewById(R.id.btnRegistrar);
         txteNombre = (EditText) findViewById(R.id.txteNombre);
-        txteCorreoInicio = (EditText) findViewById(R.id.txteCorreoInicio);
-        pswContraInicio = (EditText) findViewById(R.id.pswContraInicio);
+        txteCorreoInicio = (EditText) findViewById(R.id.txteCorreoInicioSes);
+        pswContraInicio = (EditText) findViewById(R.id.pswContraInicioses);
         txteDireccion = (EditText) findViewById(R.id.txteDireccion);
         txtnEdad = (EditText) findViewById(R.id.txtnEdad);
         txtnTelefono = (EditText) findViewById(R.id.txtnTelefono);
+        rdbCajero = (RadioButton) findViewById(R.id.rdbCajero);
+        rdbCocinero = (RadioButton) findViewById(R.id.rdbCocinero);
+        rdbgPuestos = (RadioGroup) findViewById(R.id.rdbgPuestos);
 
         rdbgPuestos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -42,23 +44,21 @@ public class RegistroEmpleado extends AppCompatActivity {
             }
         });
 
-    }
-    public void InisioSesion(View view)
-    {
-
-        Intent enviodatos= new Intent(view.getContext(), InicioSesion.class);
-        enviodatos.putExtra("Nombre", txteNombre.getText().toString());
-        enviodatos.putExtra("Correo", txteCorreoInicio.getText().toString());
-        enviodatos.putExtra("Contraseña", pswContraInicio.getText().toString());
-        enviodatos.putExtra("Puesto", puesto);
-        enviodatos.putExtra("Dirección", txteDireccion.getText().toString());
-        enviodatos.putExtra("Edad", txtnEdad.getText().toString());
-        enviodatos.putExtra("Telefono", txtnTelefono.getText().toString());
-        startActivity(enviodatos);
-        Intent iniciosesion=new Intent(this, InicioSesion.class);
-        startActivity(iniciosesion);
+    btnRegistrar.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            Intent enviodatos= new Intent(v.getContext(), InicioSesion.class);
+            enviodatos.putExtra("Nombre", txteNombre.getText().toString());
+            enviodatos.putExtra("Correo", txteCorreoInicio.getText().toString());
+            enviodatos.putExtra("Contraseña", pswContraInicio.getText().toString());
+            enviodatos.putExtra("Puesto", puesto);
+            enviodatos.putExtra("Direccion", txteDireccion.getText().toString());
+            enviodatos.putExtra("Edad", txtnEdad.getText().toString());
+            enviodatos.putExtra("Telefono", txtnTelefono.getText().toString());
+            startActivity(enviodatos);
+        }
+    });
         Toast toast=Toast.makeText(this,"Se ha resgitrado exitosamente",Toast.LENGTH_LONG);
         toast.show();
-
     }
 }
