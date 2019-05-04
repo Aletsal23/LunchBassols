@@ -113,7 +113,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="@android:drawable/screen_background_dark_transparent"
-                    android:text="Paletas de hielo
+                    android:text="Paletas de hielo"
 "
                     android:textColor="@android:color/white"
                     tools:layout_editor_absoluteX="27dp"

@@ -11,4 +11,103 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="Refrescos">
+        <item></item>
+        <item>Coca</item>
+        <item>Pepsi</item>
+        <item>Mirinda</item>
+        <item>Jarrito</item>
+        <item>Dr. Pepper</item>
+    </string-array>
+
+    <string-array name="Licuados">
+        <item></item>
+        <item>Fresa</item>
+        <item>Platano</item>
+        <item>Chocolate</item>
+        <item>Mamey</item>
+        <item>Avena</item>
+    </string-array>
+
+    <string-array name="Jugos">
+        <item></item>
+        <item>Naranja</item>
+        <item>Toronja</item>
+        <item>Zanahoria</item>
+        <item>Mandarina</item>
+    </string-array>
+
+    <string-array name="Agua">
+        <item></item>
+        <item>Natural</item>
+        <item>Limon</item>
+        <item>Moras</item>
+        <item>Horchata</item>
+        <item>Fresa</item>
+    </string-array>
+
+    <string-array name="Chilaquiles">
+        <item></item>
+        <item>Verdes</item>
+        <item>Rojos</item>
+    </string-array>
+
+    <string-array name="Hamburguesa">
+        <item></item>
+        <item>Sencilla</item>
+        <item>Dooble</item>
+        <item>Hawaiana</item>
+        <item>Con queso</item>
+    </string-array>
+
+    <string-array name="Huevos">
+        <item></item>
+        <item>Estrellados</item>
+        <item>Revueltos</item>
+        <item>Rancheros</item>
+    </string-array>
+
+    <string-array name="Torta">
+        <item></item>
+        <item>Jamon</item>
+        <item>Salchicha</item>
+        <item>Pierna</item>
+        <item>Huevo</item>
+    </string-array>
+
+    <string-array name="Papas">
+        <item></item>
+        <item>Sabritas</item>
+        <item>Doritos</item>
+        <item>Cheetos</item>
+        <item>Ruffles</item>
+        <item>Fritos</item>
+    </string-array>
+
+    <string-array name="Chocolates">
+        <item></item>
+        <item>KitKat</item>
+        <item>Sneakers</item>
+        <item>Crunch</item>
+        <item>MilkyWay</item>
+        <item>Carlos V</item>
+    </string-array>
+
+    <string-array name="Paletas de hielo">
+        <item></item>
+        <item>Chamoy</item>
+        <item>Chocolate</item>
+        <item>Fresa</item>
+        <item>Limon</item>
+        <item>Uva</item>
+    </string-array>
+
+    <string-array name="Donas">
+        <item></item>
+        <item>Glaseada</item>
+        <item>Chocolate</item>
+        <item>Chispas</item>
+    </string-array>
+
 </resources>

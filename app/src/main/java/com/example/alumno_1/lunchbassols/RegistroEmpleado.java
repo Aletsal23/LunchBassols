@@ -33,6 +33,7 @@ public class RegistroEmpleado extends AppCompatActivity {
         rdbCocinero = (RadioButton) findViewById(R.id.rdbCocinero);
         rdbgPuestos = (RadioGroup) findViewById(R.id.rdbgPuestos);
 
+        btnRegistrar.setOnClickListener(this);
         rdbgPuestos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {

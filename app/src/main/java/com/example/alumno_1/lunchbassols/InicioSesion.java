@@ -32,7 +32,7 @@ public class InicioSesion extends AppCompatActivity {
         direccion=recibirdatos.getString("Direccion");
         edad=recibirdatos.getString("Edad");
         telefono=recibirdatos.getString("Telefono");
-        if(correoinicio.equals(correo)&&pswinicio.equals(contra))
+        if(correoinicio.equals(correo) && pswinicio.equals(contra))
         {
             Intent menudraw = new Intent(this, MenuDrawer.class);
             startActivity(menudraw);

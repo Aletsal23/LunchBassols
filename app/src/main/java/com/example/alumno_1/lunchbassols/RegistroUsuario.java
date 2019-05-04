@@ -18,6 +18,7 @@ public class RegistroUsuario extends AppCompatActivity {
 
         btnReg = (Button) findViewById(R.id.btnReg);
 
+
     }
     public void InicioSesion(View view)
     {
