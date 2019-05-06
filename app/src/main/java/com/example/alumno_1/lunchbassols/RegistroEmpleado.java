@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Toast;
 
-public class RegistroEmpleado extends AppCompatActivity {
+public class RegistroEmpleado extends AppCompatActivity implements View.OnClickListener {
 
     EditText txteNombre,txteCorreoInicio,pswContraInicio,txteDireccion,txtnEdad,txtnTelefono;
     RadioGroup rdbgPuestos;
@@ -33,7 +33,7 @@ public class RegistroEmpleado extends AppCompatActivity {
         rdbCocinero = (RadioButton) findViewById(R.id.rdbCocinero);
         rdbgPuestos = (RadioGroup) findViewById(R.id.rdbgPuestos);
 
-        btnRegistrar.setOnClickListener(this);
+        btnRegistrar.setOnClickListener(RegistroEmpleado.this);
         rdbgPuestos.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -59,7 +59,11 @@ public class RegistroEmpleado extends AppCompatActivity {
             startActivity(enviodatos);
         }
     });
-        Toast toast=Toast.makeText(this,"Se ha resgitrado exitosamente",Toast.LENGTH_LONG);
-        toast.show();
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }

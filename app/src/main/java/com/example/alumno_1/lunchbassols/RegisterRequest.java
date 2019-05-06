@@ -11,7 +11,7 @@ public class RegisterRequest extends StringRequest {
     private static final String LOGIN_REQUEST_URL = "http://148.204.6.250/Register.php";
     private Map<String, String> params;
 
-    public RegisterRequest(String nombre, int boleta, String correo, String password, String direccion, int telefono   Response.Listener<String>listener) {
+    public RegisterRequest(String nombre, int boleta, String correo, String password, String direccion, int telefono,   Response.Listener<String> listener) {
         super(Request.Method.POST, LOGIN_REQUEST_URL, listener, null);
         params = new HashMap<>();
         params.put("nombre", nombre);
