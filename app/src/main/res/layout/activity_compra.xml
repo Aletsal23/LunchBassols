@@ -15,17 +15,19 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <de.hdodenhof.circleimageview.CircleImageView
-                android:id="@+id/FotoPerfil"
+                android:id="@+id/Fondin"
                 android:layout_width="48sp"
                 android:layout_height="48sp"
-                android:src="@mipmap/ic_launcher"/>
+                android:src="@drawable/fondin" />
+
             <TextView
+                android:id="@+id/Nombre"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/Nombre"
-                android:text="Cliente"
-                android:layout_gravity="center"/>
+                android:layout_gravity="center"
+                android:text="Chat LunchBassols" />
         </LinearLayout>
         <android.support.v7.widget.RecyclerView
             android:id="@+id/rvMensajes"

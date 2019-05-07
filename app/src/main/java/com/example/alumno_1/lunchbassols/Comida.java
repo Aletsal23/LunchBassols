@@ -26,11 +26,5 @@ public class Comida extends Fragment {
 
 
     }
-
-    public void Comprar(View view)
-    {
-        Intent intent = new Intent(getActivity(), Compra.class);
-        getActivity().startActivity(intent);
-    }
     }
 

@@ -41,7 +41,6 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
         btnReg.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View v)
     {
