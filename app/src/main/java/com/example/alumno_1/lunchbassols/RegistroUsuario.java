@@ -62,7 +62,7 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
                      boolean success = jsonResponse.getBoolean("success");
                      if (success)
                      {
-                         Intent regini = new Intent(RegistroUsuario.this,RegistroUsuario.class);
+                         Intent regini = new Intent(RegistroUsuario.this,InicioSesion.class);
                          startActivity(regini);
                      }
                      else

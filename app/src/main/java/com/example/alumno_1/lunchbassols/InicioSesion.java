@@ -19,7 +19,7 @@ public class InicioSesion extends AppCompatActivity {
 
     EditText txteCorreoInicioSes, pswContraInicioses;
     Button btnEntrar;
-    String correoinicio,pswinicio,nom,correo,contra,pues,direccion,edad,telefono;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,12 +52,17 @@ public class InicioSesion extends AppCompatActivity {
                                 {
                                     String nombre=jsonResponse.getString("nombre");
                                     int boleta=jsonResponse.getInt("boleta");
+                                    String direccion=jsonResponse.getString("direccion");
+                                    String telefono=jsonResponse.getString("telefono");
 
-                                    Intent envreg= new Intent(InicioSesion.this, MenuDrawer.class);
+                                    Intent envreg= new Intent(InicioSesion.this, Pago.class);
                                     envreg.putExtra("nombre",nombre);
                                     envreg.putExtra("boleta",boleta);
                                     envreg.putExtra("correo",correoinicio);
                                     envreg.putExtra("password",pswinicio);
+                                    envreg.putExtra("direccion",direccion);
+                                    envreg.putExtra("telefono",telefono);
+
                                     startActivity(envreg);
                                 }
                                 else

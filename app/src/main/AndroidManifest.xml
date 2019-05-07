@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.alumno_1.lunchbassols">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -50,7 +50,8 @@
             android:name=".MenuDrawer"
             android:label="Menu Drawer"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
-        <activity android:name=".Compra"></activity>
+        <activity android:name=".Compra" />
+        <activity android:name=".Pago"></activity>
     </application>
 
 </manifest>
