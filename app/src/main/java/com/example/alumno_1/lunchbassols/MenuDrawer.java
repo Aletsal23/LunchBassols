@@ -1,6 +1,7 @@
 package com.example.alumno_1.lunchbassols;
 
 
+import android.graphics.drawable.AnimationDrawable;
 import android.support.v4.app.FragmentManager;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,9 +16,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
 
 public class MenuDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+
+    ImageView imgCafe;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +29,19 @@ public class MenuDrawer extends AppCompatActivity
         setContentView(R.layout.activity_menu_drawer);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        AnimationDrawable animacion = new AnimationDrawable();
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf2), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf3), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf4), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf5), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf6), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf7), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf8), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf9), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf10), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf11), 300000);
+        imgCafe.setBackgroundDrawable(animacion);
+
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
