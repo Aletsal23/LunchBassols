@@ -7,7 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -46,10 +45,11 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
     {
         final String nombre= txteNom.getText().toString();
         final int boleta= Integer.parseInt(txtnBoleta.getText().toString());
-        final String email= txteEmail.getText().toString();
-        final String psw= pswPass.getText().toString();
-        final String dir= txteDir.getText().toString();
-        final int tel=Integer.parseInt(txtnTel.getText().toString());
+        final String correo= txteEmail.getText().toString();
+        final String password= pswPass.getText().toString();
+        final String direccion= txteDir.getText().toString();
+        final int telefono=Integer.parseInt(txtnTel.getText().toString());
+
 
         Response.Listener<String> respoListener= new Response.Listener<String>()
         {
@@ -79,7 +79,7 @@ public class RegistroUsuario extends AppCompatActivity implements View.OnClickLi
 
         };
 
-        RegisterRequest registro = new RegisterRequest(nombre,boleta,email,psw,dir,tel,respoListener);
+        RegisterRequest registro = new RegisterRequest(nombre,boleta,correo,password,direccion,telefono,respoListener);
         RequestQueue queue = Volley.newRequestQueue(RegistroUsuario.this);
         queue.add(registro);
 
