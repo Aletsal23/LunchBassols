@@ -40,6 +40,7 @@ dependencies {
     compile 'com.android.support:cardview-v7:27+' //Tarjetas
 
     //Firebase
+    compile 'com.google.firebase:firebase-firestore:16.0.1' //Cloud Firestore
     compile 'com.google.firebase:firebase-database:16.0.1' //Base de Datos
     compile 'com.google.firebase:firebase-storage:16.0.1'  //Base de Archivos
 
