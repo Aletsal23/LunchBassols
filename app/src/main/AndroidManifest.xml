@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/logobass"
+        android:icon="@mipmap/iconinsky"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/logobass"
+        android:roundIcon="@mipmap/iconinsky"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
         <activity android:name=".Inicio">

@@ -25,7 +25,7 @@ public class Inicio extends AppCompatActivity {
     public void InicioSesion(View view)
     {
 
-        Intent inicio=new Intent(this, MenuDrawer.class);
+        Intent inicio=new Intent(this, InicioSesion.class);
         startActivity(inicio);
 
 

@@ -7,18 +7,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.toolbox.Volley;
+import com.google.firebase.firestore.CollectionReference;
+import com.google.firebase.firestore.FirebaseFirestore;
+import com.google.firebase.firestore.Query;
 
 import org.json.JSONException;
 import org.json.JSONObject;
 
 public class InicioSesion extends AppCompatActivity {
 
-    EditText txteCorreoInicioSes, pswContraInicioses;
-    Button btnEntrar;
+    private EditText txteCorreoInicioSes, pswContraInicioses;
+    private Button btnEntrar;
+    private FirebaseFirestore mFirestore;
 
 
     @Override
@@ -26,65 +31,30 @@ public class InicioSesion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inicio_sesion);
 
+        mFirestore = FirebaseFirestore.getInstance();
+
         btnEntrar = (Button) findViewById(R.id.btnEntrar);
         txteCorreoInicioSes = (EditText) findViewById(R.id.txteCorreoInicioSes);
         pswContraInicioses = (EditText) findViewById(R.id.pswContraInicioses);
 
+         btnEntrar.setOnClickListener(new View.OnClickListener() {
+             @Override
+             public void onClick(View v) {
 
+                 Query email = mFirestore.collection("Usuarios").whereEqualTo("email", true);
 
+                 Query pass = mFirestore.collection("Usuarios").whereEqualTo("password", true);
 
-        btnEntrar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                final String correoinicio =txteCorreoInicioSes.getText().toString();
-                final String pswinicio =pswContraInicioses.getText().toString();
-
-                Response.Listener<String> responseListener= new Response.Listener<String>()
-                {
-                    @Override
-                    public void onResponse(String response)
-                    {
-                            try {
-                                JSONObject jsonResponse = new JSONObject(response);
-                                boolean success= jsonResponse.getBoolean("success");
-
-                                if (success)
-                                {
-                                    String nombre=jsonResponse.getString("nombre");
-                                    int boleta=jsonResponse.getInt("boleta");
-                                    String direccion=jsonResponse.getString("direccion");
-                                    String telefono=jsonResponse.getString("telefono");
-
-                                    Intent envreg= new Intent(InicioSesion.this, Pago.class);
-                                    envreg.putExtra("nombre",nombre);
-                                    envreg.putExtra("boleta",boleta);
-                                    envreg.putExtra("correo",correoinicio);
-                                    envreg.putExtra("password",pswinicio);
-                                    envreg.putExtra("direccion",direccion);
-                                    envreg.putExtra("telefono",telefono);
-
-                                    startActivity(envreg);
-                                }
-                                else
-                                {
-                                    AlertDialog.Builder msgError= new AlertDialog.Builder(InicioSesion.this);
-                                    msgError.setMessage("Error en el Login")
-                                            .setNegativeButton("Retry",null)
-                                            .create().show();
-                                }
-                            } catch (JSONException e)
-                            {
-                                e.printStackTrace();
-                            }
-                    }
-                };
-
-                LoginRequest loginRequest= new LoginRequest(correoinicio, pswinicio,responseListener);
-
-                RequestQueue queue = Volley.newRequestQueue(InicioSesion.this);
-                queue.add(loginRequest);
-
-            }
-        });
+                 if(txteCorreoInicioSes.equals(email) && pswContraInicioses.equals(pass)){
+                     Intent menudrawer=new Intent(InicioSesion.this, MenuDrawer.class);
+                     startActivity(menudrawer);
+                 }
+                 else{
+                     Toast.makeText(InicioSesion.this,"Error : Usuario/Contraseña incorrectos" , Toast.LENGTH_SHORT).show();
+                     txteCorreoInicioSes.setText("");
+                     pswContraInicioses.setText("");
+                 }
+             }
+         });
     }
     }
