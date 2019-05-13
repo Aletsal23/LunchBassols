@@ -26,4 +26,53 @@
         android:textStyle="bold"
         app:fontFamily="casual" />
 
+    <ImageView
+        android:id="@+id/imgBebidas"
+        android:layout_width="320dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bebida" />
+
+    <ListView
+        android:id="@+id/lstBebidas"
+        android:layout_width="133dp"
+        android:layout_height="188dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent" />
+
+    <Spinner
+        android:id="@+id/spnBebidas"
+        android:layout_width="133dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="350dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btnTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="450dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@color/colorAccent"
+        android:text="Ticket" />
+
 </FrameLayout>

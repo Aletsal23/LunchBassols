@@ -17,14 +17,20 @@ public class Ticket extends Fragment {
 
     Button btnSalir;
     TextView txtCliente,txtAlimentos,txtCuenta,txtIva;
+    String pedido,comida;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
+        recibirDatos();
         View v=inflater.inflate(R.layout.fragment_ticket, container, false);
         return v;
 
+
+    }
+    public void recibirDatos()
+    {
 
     }
 }

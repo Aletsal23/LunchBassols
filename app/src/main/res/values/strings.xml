@@ -88,13 +88,13 @@
     <string-array name="Chocolates">
         <item></item>
         <item>KitKat</item>
-        <item>Sneakers</item>
+        <item>Snickers</item>
         <item>Crunch</item>
         <item>MilkyWay</item>
         <item>Carlos V</item>
     </string-array>
 
-    <string-array name="Paletasdehielo">
+    <string-array name="PaletasDeHielo">
         <item></item>
         <item>Chamoy</item>
         <item>Chocolate</item>

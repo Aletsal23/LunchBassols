@@ -18,7 +18,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 
-public class MenuDrawer extends AppCompatActivity
+public class   MenuDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     ImageView imgCafe;
@@ -30,16 +30,16 @@ public class MenuDrawer extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         AnimationDrawable animacion = new AnimationDrawable();
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf2), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf3), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf4), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf5), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf6), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf7), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf8), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf9), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf10), 300000);
-        animacion. addFrame(getResources().getDrawable(R.drawable.caf11), 300000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf2), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf3), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf4), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf5), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf6), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf7), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf8), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf9), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf10), 3000);
+        animacion. addFrame(getResources().getDrawable(R.drawable.caf11), 3000);
         imgCafe.setBackgroundDrawable(animacion);
 
 

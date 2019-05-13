@@ -28,6 +28,7 @@
         app:fontFamily="casual" />
 
     <ImageView
+        android:id="@+id/imgComida"
         android:layout_width="320dp"
         android:layout_height="250dp"
         android:layout_marginStart="20dp"
@@ -39,6 +40,7 @@
         android:background="@drawable/torta" />
 
     <ListView
+        android:id="@+id/lstComida"
         android:layout_width="133dp"
         android:layout_height="188dp"
         android:layout_marginStart="20dp"
@@ -50,7 +52,7 @@
         android:background="@color/colorAccent" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spnComida"
         android:layout_width="133dp"
         android:layout_height="57dp"
         android:layout_marginStart="190dp"
@@ -62,7 +64,7 @@
         android:background="@color/colorAccent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnTicket"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="210dp"
