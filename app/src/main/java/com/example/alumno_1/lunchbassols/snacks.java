@@ -1,6 +1,7 @@
 package com.example.alumno_1.lunchbassols;
 
 import android.content.Context;
+import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -22,7 +23,7 @@ public class snacks extends Fragment {
     Spinner spnSnacks;
     ListView lstSnacks;
     ImageView imgSnacks;
-    String snack;
+    String snack,pagosnack;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -68,6 +69,17 @@ public class snacks extends Fragment {
             public void onNothingSelected(AdapterView<?> lista) {
             }
         });
+
+        btnTicket.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent env= new Intent (v.getContext(), Ticket.class);
+                env.putExtra("Snack",snack);
+                env.putExtra("PagoSnack",pagosnack);
+                startActivity(env);
+            }
+        });
+
         return inflater.inflate(R.layout.fragment_snacks, container, false);
     }
     public void papas()
@@ -80,18 +92,23 @@ public class snacks extends Fragment {
                 {
                     case 0: imgSnacks.setImageResource(R.drawable.sabritas);
                         snack="Sabritas";
+                        pagosnack="12";
                             break;
                     case 1: imgSnacks.setImageResource(R.drawable.doritos);
                         snack="Doritos";
+                        pagosnack="12";
                         break;
                     case 2: imgSnacks.setImageResource(R.drawable.cheetos);
                         snack="Cheetos";
+                        pagosnack="12";
                         break;
                     case 3: imgSnacks.setImageResource(R.drawable.ruffles);
                         snack="Ruffles";
+                        pagosnack="12";
                         break;
                     case 4: imgSnacks.setImageResource(R.drawable.fritos);
                         snack="Fritos";
+                        pagosnack="12";
                         break;
                 }
 
@@ -108,18 +125,23 @@ public class snacks extends Fragment {
                 {
                     case 0: imgSnacks.setImageResource(R.drawable.kitkat);
                         snack="Kit Kat";
+                        pagosnack="15";
                         break;
                     case 1: imgSnacks.setImageResource(R.drawable.snickers);
                         snack="Snickers";
+                        pagosnack="15";
                         break;
                     case 2: imgSnacks.setImageResource(R.drawable.crunch);
                         snack="Crunch";
+                        pagosnack="15";
                         break;
                     case 3: imgSnacks.setImageResource(R.drawable.milkyway);
                         snack="Milky Way";
+                        pagosnack="15";
                         break;
                     case 4: imgSnacks.setImageResource(R.drawable.carlosv);
                         snack="Carlos V";
+                        pagosnack="15";
                         break;
                 }
 
@@ -136,18 +158,23 @@ public class snacks extends Fragment {
                 {
                     case 0: imgSnacks.setImageResource(R.drawable.chamoy);
                         snack="Paleta Chamoy";
+                        pagosnack="10";
                         break;
                     case 1: imgSnacks.setImageResource(R.drawable.paletachoc);
                         snack="Paleta Chocolate";
+                        pagosnack="10";
                         break;
                     case 2: imgSnacks.setImageResource(R.drawable.paletafresa);
                         snack="Paleta Fresa";
+                        pagosnack="10";
                         break;
                     case 3: imgSnacks.setImageResource(R.drawable.paletalimon);
                         snack="Paleta Limon";
+                        pagosnack="10";
                         break;
                     case 4: imgSnacks.setImageResource(R.drawable.uva);
                         snack="Paleta Uva";
+                        pagosnack="10";
                         break;
                 }
 
@@ -164,12 +191,15 @@ public class snacks extends Fragment {
                 {
                     case 0: imgSnacks.setImageResource(R.drawable.glaseada);
                         snack="Dona Glaseada";
+                        pagosnack="12";
                         break;
                     case 1: imgSnacks.setImageResource(R.drawable.donachoc);
                         snack="Dona Chocolate";
+                        pagosnack="12";
                         break;
                     case 2: imgSnacks.setImageResource(R.drawable.donachispas);
                         snack="Dona Chispas";
+                        pagosnack="12";
                         break;
                 }
 

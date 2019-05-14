@@ -11,12 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity
-            android:name=".DatosPersonales">
-        </activity>
+        <activity android:name=".DatosPersonales"></activity>
         <activity
             android:name=".Index"
-            android:label="LunchBassols" >
+            android:label="LunchBassols">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +26,8 @@
             android:label="Menu Drawer"
             android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
         <activity android:name=".Compra" />
-        <activity android:name=".Pago"></activity>
+        <activity android:name=".Pago" />
+        <activity android:name=".tick"></activity>
     </application>
 
 </manifest>

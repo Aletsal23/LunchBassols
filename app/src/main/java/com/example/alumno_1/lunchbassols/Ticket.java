@@ -17,7 +17,7 @@ public class Ticket extends Fragment {
 
     Button btnSalir;
     TextView txtCliente,txtAlimentos,txtCuenta,txtIva;
-    String pedido,comida;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -25,6 +25,7 @@ public class Ticket extends Fragment {
 
         recibirDatos();
         View v=inflater.inflate(R.layout.fragment_ticket, container, false);
+
         return v;
 
 

@@ -24,7 +24,8 @@ public class Comida extends Fragment {
     Spinner spnComida;
     ListView lstComida;
     ImageView imgComida;
-    String comida;
+    String comida,pago;
+
 
 
     @Override
@@ -74,9 +75,17 @@ public class Comida extends Fragment {
             }
         });
 
-        Intent enviodatos= new Intent (view.getContext(), Ticket.class);
-        enviodatos.putExtra("Pedido",comida);
-        startActivity(enviodatos);
+        btnComprar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent enviodatos= new Intent(v.getContext(), tick.class);
+                enviodatos.putExtra("Comida",comida);
+                enviodatos.putExtra("PagoComida",pago);
+                startActivity(enviodatos);
+
+            }
+        });
+
         return inflater.inflate(R.layout.fragment_comida, container, false);
 
 
@@ -91,9 +100,11 @@ public class Comida extends Fragment {
                 {
                     case 0: imgComida.setImageResource(R.drawable.chilaquilesverdes);
                         comida="Chilaquiles Verdes";
+                        pago="25";
                         break;
                     case 1: imgComida.setImageResource(R.drawable.chilaquilesrojos);
                         comida="Chilaquiles Rojos";
+                        pago="25";
                         break;
                 }
 
@@ -110,15 +121,19 @@ public class Comida extends Fragment {
                 {
                     case 0: imgComida.setImageResource(R.drawable.sencilla);
                         comida="Hamburguesa Sencilla";
+                        pago="20";
                         break;
                     case 1: imgComida.setImageResource(R.drawable.doble);
                         comida="Hamburguesa Doble";
+                        pago="25";
                         break;
                     case 2: imgComida.setImageResource(R.drawable.hawaiana);
                         comida="Hamburguesa Hawaianna";
+                        pago="28";
                         break;
                     case 3: imgComida.setImageResource(R.drawable.queso);
                         comida="Hamburguesa Queso";
+                        pago="22";
                         break;
                 }
 
@@ -135,12 +150,15 @@ public class Comida extends Fragment {
                 {
                     case 0: imgComida.setImageResource(R.drawable.estrella);
                         comida="Huevos Estrellados";
+                        pago="25";
                         break;
                     case 1: imgComida.setImageResource(R.drawable.revuelto);
                         comida="Hamburguesa Revueltos";
+                        pago="25";
                         break;
                     case 2: imgComida.setImageResource(R.drawable.rancheros);
                         comida="Hamburguesa Rancheros";
+                        pago="25";
                         break;
                 }
 
@@ -157,15 +175,19 @@ public class Comida extends Fragment {
                 {
                     case 0: imgComida.setImageResource(R.drawable.jamon);
                         comida="Torta Jamon";
+                        pago="15";
                         break;
                     case 1: imgComida.setImageResource(R.drawable.salchicha);
                         comida="Torta Salchicha";
+                        pago="15";
                         break;
                     case 2: imgComida.setImageResource(R.drawable.pierna);
                         comida="Torta Pierna";
+                        pago="15";
                         break;
                     case 3: imgComida.setImageResource(R.drawable.huevo);
                         comida="Torta Huevo";
+                        pago="15";
                         break;
                 }
 

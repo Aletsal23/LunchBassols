@@ -107,6 +107,7 @@ public class   MenuDrawer extends AppCompatActivity
 
         FragmentManager fragmentManager=getSupportFragmentManager();
 
+
         if (id == R.id.nav_comida) {
             fragmentManager.beginTransaction().replace(R.id.container,new Comida()).commit();
         } else if (id == R.id.nav_bebidas) {
@@ -128,11 +129,6 @@ public class   MenuDrawer extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-    public void pedido()
-    {
-        Intent pedido=new Intent(this, Compra.class);
-        startActivity(pedido);
     }
     public void salir()
     {
