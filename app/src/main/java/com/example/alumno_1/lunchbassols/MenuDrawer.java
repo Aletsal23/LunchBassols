@@ -17,11 +17,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class   MenuDrawer extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public static final String user="names";
     ImageView imgCafe;
+    TextView txtUser;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,8 @@ public class   MenuDrawer extends AppCompatActivity
         animacion. addFrame(getResources().getDrawable(R.drawable.caf11), 3000);
         imgCafe.setBackgroundDrawable(animacion);
 
+        String user = getIntent().getStringExtra("names");
+        txtUser.setText("¡Bienvenido "+ user +"!");
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {

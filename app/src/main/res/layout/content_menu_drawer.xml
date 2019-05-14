@@ -59,19 +59,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline9"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.112" />
 
     <android.support.constraint.Guideline
         android:id="@+id/guideline9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="325dp" />
+        app:layout_constraintGuide_begin="270dp" />
 
     <ImageView
         android:id="@+id/imgCafe"
         android:layout_width="154dp"
-        android:layout_height="206dp"
+        android:layout_height="154dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
@@ -82,7 +82,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4"
-        app:layout_constraintVertical_bias="0.7"
-         />
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtUser"
+        android:layout_width="260dp"
+        android:layout_height="34dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="461dp" />
 
 </android.support.constraint.ConstraintLayout>

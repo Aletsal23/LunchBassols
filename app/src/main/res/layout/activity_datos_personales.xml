@@ -5,18 +5,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/caf"
-    tools:context=".RegistroUsuario">
+    tools:context=".DatosPersonales">
 
-    <EditText
-        android:id="@+id/pswPass"
-        android:layout_width="237dp"
-        android:layout_height="26dp"
+    <TextView
+        android:id="@+id/txteEdoCivil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:text="Edo. Civil:"
+        android:textColor="@android:color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:fontFamily="casual"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toStartOf="@+id/txtnTel"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.76" />
+
+    <EditText
+        android:id="@+id/txteOcupacion"
+        android:layout_width="237dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
         android:layout_marginBottom="12dp"
         android:background="@android:color/background_dark"
         android:ems="10"
-        android:inputType="textPassword"
+        android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
         app:layout_constraintBottom_toTopOf="@+id/txteDir"
         app:layout_constraintEnd_toEndOf="parent" />
@@ -31,15 +54,15 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:text="Contraseña:"
+        android:text="Ocupacion:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/pswPass"
+        app:layout_constraintEnd_toStartOf="@+id/txteOcupacion"
         app:layout_constraintHorizontal_bias="0.09"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+        app:layout_constraintTop_toBottomOf="@+id/txtnEdad" />
 
     <TextView
         android:id="@+id/textView34"
@@ -86,7 +109,7 @@
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+        app:layout_constraintEnd_toStartOf="@+id/txtnEdad"
         app:layout_constraintHorizontal_bias="0.117"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -102,19 +125,19 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:text="REGISTRO USUARIO"
+        android:text="DATOS PERSONALES"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView28"
+        android:id="@+id/textView45"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -123,18 +146,18 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
-        android:text="Correo:"
+        android:text="Edad:"
         android:textColor="@android:color/white"
         android:textSize="15sp"
         android:textStyle="bold"
         app:fontFamily="casual"
-        app:layout_constraintEnd_toStartOf="@+id/txteEmail"
+        app:layout_constraintEnd_toStartOf="@+id/txtnEdad"
         app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
     <EditText
-        android:id="@+id/txteEmail"
+        android:id="@+id/txtnEdad"
         android:layout_width="265dp"
         android:layout_height="26dp"
         android:layout_marginEnd="8dp"
@@ -142,9 +165,9 @@
         android:layout_marginBottom="20dp"
         android:background="@android:color/background_dark"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textColor="@android:color/background_light"
-        app:layout_constraintBottom_toTopOf="@+id/pswPass"
+        app:layout_constraintBottom_toTopOf="@+id/txteOcupacion"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
@@ -153,7 +176,7 @@
         android:layout_height="26dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="16dp"
         android:background="@android:color/background_dark"
         android:ems="10"
         android:inputType="textPersonName"
@@ -201,15 +224,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView30"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.014" />
 
     <EditText
         android:id="@+id/txtnTel"
         android:layout_width="195dp"
         android:layout_height="32dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginBottom="80dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="96dp"
         android:background="@android:color/black"
         android:ems="10"
         android:inputType="number"
@@ -225,13 +248,14 @@
         android:layout_marginLeft="8dp"
         android:layout_marginEnd="-8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="28dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:onClick="onClick"
         android:text="REGISTRAR"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent" />
 
     <android.support.constraint.Guideline
@@ -246,7 +270,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="463dp" />
+        app:layout_constraintGuide_begin="481dp" />
 
     <EditText
         android:id="@+id/txtnBoleta"
@@ -262,9 +286,25 @@
         android:ems="10"
         android:inputType="number"
         android:textColor="@color/cardview_light_background"
-        app:layout_constraintBottom_toTopOf="@+id/txteEmail"
+        app:layout_constraintBottom_toTopOf="@+id/txtnEdad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@+id/textView34"
         app:layout_constraintTop_toBottomOf="@+id/txteNom" />
+
+    <Spinner
+        android:id="@+id/spnEdoCivil"
+        android:layout_width="259dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="28dp"
+        android:background="@color/cardview_shadow_start_color"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.944"
+        app:layout_constraintStart_toStartOf="parent" />
+
 </android.support.constraint.ConstraintLayout>

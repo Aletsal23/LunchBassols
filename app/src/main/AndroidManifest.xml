@@ -11,40 +11,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
-        <activity android:name=".Inicio">
+        <activity
+            android:name=".DatosPersonales">
+        </activity>
+        <activity
+            android:name=".Index"
+            android:label="LunchBassols" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".Registro"
-            android:parentActivityName=".Inicio">
-            <meta-data
-                android:name="android.support.PARENT_ACTIVITY"
-                android:value=".Inicio" />
-        </activity>
-        <activity
-            android:name=".RegistroEmpleado"
-            android:parentActivityName=".Registro">
-            <meta-data
-                android:name="andorid.support.PARENT_ACTIVITY"
-                android:value=".Registro" />
-        </activity>
-        <activity
-            android:name=".RegistroUsuario"
-            android:parentActivityName=".Registro">
-            <meta-data
-                android:name="andorid.support.PARENT_ACTIVITY"
-                android:value=".Registro" />
-        </activity>
-        <activity
-            android:name=".InicioSesion"
-            android:parentActivityName=".Inicio">
-            <meta-data
-                android:name="andorid.support.PARENT_ACTIVITY"
-                android:value=".Inicio" />
         </activity>
         <activity
             android:name=".MenuDrawer"
