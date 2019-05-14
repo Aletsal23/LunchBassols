@@ -59,7 +59,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
         String email = txteCorreo.getText().toString().trim();
         String pass = pswContraseña.getText().toString().trim();
 
-        if(TextUtils.isEmpty(email)){//(precio.equals(""))
+        if(TextUtils.isEmpty(email)){
             Toast.makeText(this,"Se debe ingresar un correo",Toast.LENGTH_LONG).show();
             return;
         }
@@ -78,8 +78,6 @@ public class Index extends AppCompatActivity implements View.OnClickListener
 
                 if(task.isSuccessful()){
                     Toast.makeText(Index.this,"Se ha registrado el correo",Toast.LENGTH_SHORT).show();
-                    Intent datos = new Intent(Index.this,DatosPersonales.class);
-                    startActivity(datos);
                 }else{
                     if(task.getException()instanceof FirebaseAuthUserCollisionException){
                         Toast.makeText(Index.this,"Ese correo ha sido registrado",Toast.LENGTH_SHORT).show();}
@@ -96,7 +94,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
         final String email = txteCorreo.getText().toString().trim();
         String pass = pswContraseña.getText().toString().trim();
 
-        if(TextUtils.isEmpty(email)){//(precio.equals(""))
+        if(TextUtils.isEmpty(email)){
             Toast.makeText(Index.this,"Se debe ingresar un correo",Toast.LENGTH_LONG).show();
             return;
         }

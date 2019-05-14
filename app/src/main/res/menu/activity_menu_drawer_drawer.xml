@@ -17,10 +17,6 @@
             android:icon="@drawable/snacks"
             android:title="Snacks" />
         <item
-            android:id="@+id/nav_menudia"
-            android:icon="@drawable/menu"
-            android:title="Menu del día" />
-        <item
             android:id="@+id/nav_pedido"
             android:icon="@drawable/cliente"
             android:title="Pedido" />

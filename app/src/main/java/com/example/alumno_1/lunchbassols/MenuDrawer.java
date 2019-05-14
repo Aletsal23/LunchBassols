@@ -113,8 +113,6 @@ public class   MenuDrawer extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.container,new Bebidas()).commit();
         } else if (id == R.id.nav_snacks) {
             fragmentManager.beginTransaction().replace(R.id.container,new snacks()).commit();
-        } else if (id == R.id.nav_menudia) {
-            fragmentManager.beginTransaction().replace(R.id.container,new MenuDia()).commit();
         } else if (id == R.id.nav_pedido) {
             Intent h= new Intent(MenuDrawer.this,Compra.class);
             startActivity(h);
@@ -128,11 +126,6 @@ public class   MenuDrawer extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
-    }
-    public void pedido()
-    {
-        Intent pedido=new Intent(this, Compra.class);
-        startActivity(pedido);
     }
     public void salir()
     {
