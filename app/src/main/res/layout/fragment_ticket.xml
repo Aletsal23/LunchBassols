@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/caf"
+    android:background="@drawable/registradora"
     tools:context=".Ticket">
 
     <!-- TODO: Update blank fragment layout -->
@@ -32,6 +32,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="TICKET"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"

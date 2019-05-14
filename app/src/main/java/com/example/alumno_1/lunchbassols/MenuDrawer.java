@@ -114,8 +114,6 @@ public class   MenuDrawer extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.container,new Bebidas()).commit();
         } else if (id == R.id.nav_snacks) {
             fragmentManager.beginTransaction().replace(R.id.container,new snacks()).commit();
-        } else if (id == R.id.nav_menudia) {
-            fragmentManager.beginTransaction().replace(R.id.container,new MenuDia()).commit();
         } else if (id == R.id.nav_pedido) {
             Intent h= new Intent(MenuDrawer.this,Compra.class);
             startActivity(h);

@@ -5,7 +5,7 @@
     android:id="@+id/comida"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fc"
+    android:background="@drawable/galletas"
     tools:context=".Comida">
 
     <!-- TODO: Update blank fragment layout -->
@@ -20,9 +20,9 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorAccent"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
         android:text="SNACKS"
-        android:textColor="@android:color/background_light"
+        android:textColor="@android:color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:fontFamily="casual" />
@@ -49,7 +49,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorAccent" />
+        android:background="@color/common_google_signin_btn_text_light_disabled" />
 
     <Spinner
         android:id="@+id/spnSnacks"
@@ -61,7 +61,7 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorAccent" />
+        android:background="@color/common_google_signin_btn_text_light_disabled" />
 
     <Button
         android:id="@+id/btnTicket"
@@ -73,6 +73,6 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:background="@color/colorAccent"
+        android:background="@color/common_google_signin_btn_text_light_disabled"
         android:text="Ticket" />
 </FrameLayout>
