@@ -4,8 +4,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/caf"
+    android:background="@drawable/registradora"
     tools:context=".tick">
+
+    <Button
+        android:id="@+id/btnvolverTick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
+        android:onClick="inicio"
+        android:text="VOLVER"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.456" />
 
     <Button
         android:id="@+id/btnSalir"
@@ -18,22 +39,27 @@
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
+        android:onClick="salir"
         android:text="SALIR"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.269"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="0.456" />
 
     <TextView
         android:id="@+id/textView21"
-        android:layout_width="135dp"
-        android:layout_height="45dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
+        android:background="@android:drawable/screen_background_dark_transparent"
         android:text="TICKET"
         android:textColor="@android:color/background_light"
         android:textSize="30sp"
@@ -41,82 +67,25 @@
         app:fontFamily="casual"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
         android:id="@+id/scrollView2"
-        android:layout_width="354dp"
-        android:layout_height="361dp"
+        android:layout_width="337dp"
+        android:layout_height="370dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="3dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.258"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401">
+        app:layout_constraintTop_toBottomOf="@+id/textView21">
 
         <TableLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="47dp">
-
-                <TextView
-                    android:id="@+id/textView33"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="48dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
-                    android:background="@android:drawable/screen_background_dark_transparent"
-                    android:text="Cliente:"
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
-                    app:layout_constraintHorizontal_bias="0.117"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
-
-                <Space
-                    android:layout_width="22dp"
-                    android:layout_height="match_parent" />
-
-                <TextView
-                    android:id="@+id/txtCliente"
-                    android:layout_width="239dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginLeft="8dp"
-                    android:layout_marginTop="48dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginRight="8dp"
-                    android:background="@android:drawable/screen_background_dark_transparent"
-                    android:text=""
-                    android:textColor="@android:color/white"
-                    android:textSize="15sp"
-                    android:textStyle="bold"
-                    app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
-                    app:layout_constraintHorizontal_bias="0.117"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/guideline6" />
-
-            </TableRow>
-
-            <Space
-                android:layout_width="24dp"
-                android:layout_height="10dp" />
 
             <TableRow
                 android:layout_width="match_parent"
@@ -137,7 +106,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -161,7 +129,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -190,7 +157,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -214,7 +180,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -243,7 +208,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -267,7 +231,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -297,7 +260,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -321,7 +283,6 @@
                     android:textSize="15sp"
                     android:textStyle="bold"
                     app:fontFamily="casual"
-                    app:layout_constraintEnd_toStartOf="@+id/txteEmail"
                     app:layout_constraintHorizontal_bias="0.117"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="@+id/guideline6" />
@@ -335,5 +296,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="63dp" />
+        app:layout_constraintGuide_begin="83dp" />
 </android.support.constraint.ConstraintLayout>

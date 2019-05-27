@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
@@ -35,14 +35,13 @@
 
     <EditText
         android:id="@+id/pswContraseña"
-        android:layout_width="246dp"
+        android:layout_width="218dp"
         android:layout_height="30dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="28dp"
         android:layout_marginRight="28dp"
         android:background="@android:drawable/screen_background_dark_transparent"
         android:ems="10"
-        android:text="@string/enter_password"
         android:inputType="textPassword"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,7 +57,6 @@
         android:background="@android:drawable/screen_background_dark_transparent"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="@string/enter_email"
         android:textColor="@android:color/darker_gray"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
@@ -88,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="36dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:background="@android:drawable/screen_background_dark_transparent"
@@ -98,14 +96,14 @@
         android:textStyle="bold"
         app:fontFamily="casual"
         app:layout_constraintEnd_toStartOf="@+id/pswContraseña"
-        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView8" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="220dp"
-        android:layout_height="223dp"
+        android:layout_width="209dp"
+        android:layout_height="201dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
@@ -151,6 +149,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pswContraseña"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.969" />
 
 </android.support.constraint.ConstraintLayout>

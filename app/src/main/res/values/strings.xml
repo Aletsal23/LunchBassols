@@ -16,8 +16,33 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+    <string-array name="EdoCivil">
+        <item>Soltero</item>
+        <item>Casado</item>
+        <item>Viudo</item>
+        <item>Otro</item>
+    </string-array>
+
+    <string-array name="Comida">
+        <item>Chilaquiles</item>
+        <item>Hamburguesa</item>
+        <item>Huevos</item>
+        <item>Torta</item>
+    </string-array>
+    <string-array name="Bebidas">
+        <item>Refrescos</item>
+        <item>Licuados</item>
+        <item>Jugos</item>
+        <item>Agua</item>
+    </string-array>
+    <string-array name="Snacks">
+        <item>Papas</item>
+        <item>Chocolates</item>
+        <item>Paletas de hielo</item>
+        <item>Donas</item>
+    </string-array>
+
     <string-array name="Refrescos">
-        <item></item>
         <item>Coca</item>
         <item>Pepsi</item>
         <item>Mirinda</item>
@@ -26,7 +51,6 @@
     </string-array>
 
     <string-array name="Licuados">
-        <item></item>
         <item>Fresa</item>
         <item>Platano</item>
         <item>Chocolate</item>
@@ -35,7 +59,6 @@
     </string-array>
 
     <string-array name="Jugos">
-        <item></item>
         <item>Naranja</item>
         <item>Toronja</item>
         <item>Zanahoria</item>
@@ -43,7 +66,6 @@
     </string-array>
 
     <string-array name="Agua">
-        <item></item>
         <item>Natural</item>
         <item>Limon</item>
         <item>Moras</item>
@@ -52,13 +74,11 @@
     </string-array>
 
     <string-array name="Chilaquiles">
-        <item></item>
         <item>Verdes</item>
         <item>Rojos</item>
     </string-array>
 
     <string-array name="Hamburguesa">
-        <item></item>
         <item>Sencilla</item>
         <item>Dooble</item>
         <item>Hawaiana</item>
@@ -66,14 +86,12 @@
     </string-array>
 
     <string-array name="Huevos">
-        <item></item>
         <item>Estrellados</item>
         <item>Revueltos</item>
         <item>Rancheros</item>
     </string-array>
 
     <string-array name="Torta">
-        <item></item>
         <item>Jamon</item>
         <item>Salchicha</item>
         <item>Pierna</item>
@@ -81,7 +99,6 @@
     </string-array>
 
     <string-array name="Papas">
-        <item></item>
         <item>Sabritas</item>
         <item>Doritos</item>
         <item>Cheetos</item>
@@ -90,7 +107,6 @@
     </string-array>
 
     <string-array name="Chocolates">
-        <item></item>
         <item>KitKat</item>
         <item>Snickers</item>
         <item>Crunch</item>
@@ -99,7 +115,6 @@
     </string-array>
 
     <string-array name="PaletasDeHielo">
-        <item></item>
         <item>Chamoy</item>
         <item>Chocolate</item>
         <item>Fresa</item>
@@ -108,10 +123,10 @@
     </string-array>
 
     <string-array name="Donas">
-        <item></item>
         <item>Glaseada</item>
         <item>Chocolate</item>
         <item>Chispas</item>
     </string-array>
+    <string name="title_activity_men_draw">MenDraw</string>
 
 </resources>

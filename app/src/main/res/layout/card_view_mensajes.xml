@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Empleado" />
+                android:text="Cliente" />
             <TextView
                 android:id="@+id/Hora"
                 android:layout_width="wrap_content"

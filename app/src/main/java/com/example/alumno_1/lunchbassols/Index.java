@@ -53,6 +53,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
 
         btnRegistro.setOnClickListener(this);
         btnInicioSes.setOnClickListener(this);
+
     }
 
     private void registrar(){
@@ -69,7 +70,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
             return;
         }
 
-        progressDialog.setMessage("Realizando registro en linea...");
+        progressDialog.setMessage("Registrando usuario...");
         progressDialog.show();
 
         mFireauth.createUserWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -80,7 +81,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
                     Toast.makeText(Index.this,"Se ha registrado el correo",Toast.LENGTH_SHORT).show();
                 }else{
                     if(task.getException()instanceof FirebaseAuthUserCollisionException){
-                        Toast.makeText(Index.this,"Ese correo ha sido registrado",Toast.LENGTH_SHORT).show();}
+                        Toast.makeText(Index.this,"Ese correo ya ha sido registrado",Toast.LENGTH_SHORT).show();}
                     else{
                         Toast.makeText(Index.this,"No se pudo registrar el correo",Toast.LENGTH_SHORT).show();
                     }
@@ -104,7 +105,7 @@ public class Index extends AppCompatActivity implements View.OnClickListener
             return;
         }
 
-        progressDialog.setMessage("Realizando consulta en linea...");
+        progressDialog.setMessage("Iniciando sesión...");
         progressDialog.show();
 
         mFireauth.signInWithEmailAndPassword(email,pass).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
@@ -112,19 +113,13 @@ public class Index extends AppCompatActivity implements View.OnClickListener
             public void onComplete(@NonNull Task<AuthResult> task) {
 
                 if(task.isSuccessful()){
-                    int pos = email.indexOf("@");
-                    String user = email.substring(0, pos);
                     Toast.makeText(Index.this,"Bienvenido: " + txteCorreo.getText(),Toast.LENGTH_SHORT).show();
-                    Intent intencion = new Intent (getApplication(),MenuDrawer.class);
-                    intencion.putExtra(MenuDrawer.user, email);
+                    Intent intencion = new Intent (getApplication(),Activity_transicion.class);
                     startActivity(intencion);
                 }else{
-                    if(task.getException()instanceof FirebaseAuthUserCollisionException){
-                        Toast.makeText(Index.this,"Ese correo ha sido registrado",Toast.LENGTH_SHORT).show();}
-                    else{
-                        Toast.makeText(Index.this,"No se pudo registrar el correo",Toast.LENGTH_SHORT).show();
+
+                        Toast.makeText(Index.this,"correo y/o contraseña erroneos",Toast.LENGTH_SHORT).show();
                     }
-                }
                 progressDialog.dismiss();
             }
         });

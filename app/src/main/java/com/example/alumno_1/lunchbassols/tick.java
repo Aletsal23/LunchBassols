@@ -1,7 +1,10 @@
 package com.example.alumno_1.lunchbassols;
 
+import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -25,32 +28,37 @@ public class tick extends AppCompatActivity {
 
         Bundle recibir= this.getIntent().getExtras();
         String comida=recibir.getString("Comida");
-        String pagocomida=recibir.getString("PagoComida");
-        String bebida=recibir.getString("Bebida");
-        String pagobebida=recibir.getString("PagoComida");
-        String snack=recibir.getString("Snack");
-        String pagosnack=recibir.getString("PagoSnack");
+        int pagocomida = recibir.getInt("PagoComida");
 
-        pagocom=Integer.parseInt(pagocomida);
-        pagobebi=Integer.parseInt(pagobebida);
-        pagosna=Integer.parseInt(pagosnack);
+        Bundle recibirbeb= this.getIntent().getExtras();
+        String bebida=recibirbeb.getString("Bebida");
+        int pagobebida=recibirbeb.getInt("PagoBebida");
 
-        cuenta=pagocom+pagobebi+pagosna;
-        iva=(pagocom+pagobebi+pagosna)*0.16;
+        Bundle recibirsna= this.getIntent().getExtras();
+        String snack=recibirsna.getString("Snack");
+        int pagosnack=recibirsna.getInt("PagoSnack");
+
+        cuenta=pagocomida+pagobebida+pagosnack;
+        iva=(pagocomida+pagobebida+pagosnack)*0.16;
         total=cuenta+iva;
 
-        txtAlimentos.setText(comida+"\n"+bebida+"\n"+snack);
+        txtAlimentos.setText(comida);
+        txtAlimentos.setText(bebida);
+        txtAlimentos.setText(snack);
         txtCuenta.setText(String.valueOf(cuenta));
         txtIva.setText(String.valueOf(iva));
         txtTotal.setText(String.valueOf(total));
 
-
-
-
-
-
-
-
-
+        txtAlimentos.setText((comida));
     }
+
+    public void salir(View view){
+        Intent salir = new Intent (this,Index.class);
+        startActivity(salir);
+    }
+    public void inicio(View view){
+        Intent inicio = new Intent (this,MenuInicio.class);
+        startActivity(inicio);
+    }
+
 }
